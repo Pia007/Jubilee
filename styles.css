@@ -212,6 +212,10 @@ h3 {
     text-align: justify;
     text-justify: inter-word;
 }
+img {
+    float: inherit;  
+}
+
 .timeline-content .date {
     font-size: var(--fs-norm);
     font-weight: var(--fw-bold);
