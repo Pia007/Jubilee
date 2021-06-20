@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --fw-thin: 100;
+    --fw-elt: 200;
+    --fw-lt: 300;
+    --fw-reg: 400;
+    --fw-s-bold: 600;
+
+    --fs-xsm: .75rem;
+    --fs-sm: .875rem;
+    --fs-norm: 1rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 2rem;
+    --fs-hdg1: 9vw;
+    --fs-hdg2: 7vw;
+    --fs-hdg3: 5vw;
+
+    --red-gd: hsla(0, 100%, 25%, 1);
+    --black-gd : hsla( 0, 0%, 0%, .8);
+    --green-gd: hsla(125, 69%, 20%, 1);
+    --white: hsla(155, 100%, 100%, 1);
+    --yellow: hsla(60, 48%, 48.2%, 1);
+    --blue-gd: hsla(240, 100%, 50%, 1);	
+    --nav-bg: hsla( 0, 0%, 0%, 1);
+    --nav-ft: #888888;   
+
+}
+body,
+body[theme="traditional"] {
+    --bg: hsla(60, 48%, 46%, 1);
+    --red-gd: hsla(0, 100%, 25%, 1);
+    --green-gd: hsla(125, 69%, 21%, 1);
+    --hov-odd: hsla(0, 100%, 35%, 1);
+    --hov-odd2: hsla(125, 45%, 35%, 1);
+    --btn-gd: linear-gradient(to bottom, var(--red-gd)30%, var(--black-gd)35% 62%, var(--green-gd) 76%);
+    --gradient: linear-gradient(to right, var(--red-gd)25%, var(--black-gd)35% 62%, var(--green-gd) 76%);
+    --time-ft: hsla(255, 100%, 100%, 1);
+    --time-fth: hsla(255, 100%, 100%, 1);
+    --time-bg: hsla( 0, 0%, 0%, 1);
+    --nav-bg: hsla( 0, 0%, 0%, 1);
+    --hov-odd: hsla(0, 100%, 35%, 1);
+    --hov-odd2: hsla(125, 45%, 35%, 1);
+    --hov-even: hsla(125, 69%, 20%, 1);
+    --link: hsla(125, 69%, 25%, 1);
+    --link-hov: hsla( 0, 0%, 0%, 1);
+    
+
+}
+
+body[theme="commemorative"] {
+    --bg: hsla( 0, 0%, 0%, 1);
+    --red-gd: hsla(0, 100%, 35%, 1);
+    --green-gd: hsla(125, 45%, 35%, 1);
+    --hov-odd: hsla(240, 100%, 50%, 1);
+    --hov-odd2: hsla(240, 100%, 50%, 1);
+    --btn-gd: linear-gradient(to bottom, var(--blue-gd)25%, var(--white)35% 62%, var(--red-gd) 76%);
+    --btn-bg: hsla( 0, 0%, 0%, .7 );
+    --gradient: linear-gradient(to right, var(--blue-gd)25%, var(--white)35% 62%, var(--red-gd) 76%);
+    --time-fth: hsla(255, 100%, 100%, 1);
+    --time-ft: hsla( 0, 0%, 0%, 1);
+    --time-bg: hsla(255, 100%, 100%, 1);
+    --nav-bg: hsla( 0, 0%, 0%, 1);
+    --hov-odd: hsla(240, 100%, 50%, 1);
+    --hov-odd2: hsla(240, 100%, 50%, 1);
+    --hov-even: hsla(0, 100%, 35%, 1);
+    --link: hsla( 0, 0%, 0%, 1);
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: var(--poppins);
+    background:var(--bg);
+    font-weight: var(--fw-s-bold);
+    transition: background-color 0.3s;    
+}
+
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    border-bottom: 0.125rem solid var(--red-gd);
+    box-shadow: .0625rem .0625rem .3125rem .5rem var(--red-gd);
+}
+.navbar a {
+    float: left;
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-reg);
+    color: var(--nav-ft);
+    text-align: center;
+    padding: 1rem .9375rem;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: var(--hov-odd2);
+    color: var(--white);
+}
+.navbar a:visited{
+    color: var(-white);
+    background-color: var(--hov-odd2);
+} 
+
+span {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem .9375rem;
+}
+.flag-button {
+    width: 2.8125rem;
+    height: 2.1875rem;
+    padding: 0;
+    background-image: var(--btn-gd);
+    border: none;
+    z-index: 2;
+    
+}
+
+
+.fas {
+    float: right;
+    vertical-align: middle;
+    font-size: 2rem;
+    color: var(--green-gd);
+    padding: .875rem;
+    text-align: right;
+    margin-right: auto;
+}
+.fas:hover {
+    color: var(--yellow);
+}
+
+/* MAIN */
+.home {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+}
+.headings {
+    width: auto;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+h1 {
+    font-size: var(--fs-hdg1);
+    margin: 0 auto;
+}
+h2 {
+    font-size: var(--fs-hdg2);
+    margin: 0 auto;
+}
+h3 {
+    font-size: var(--fs-hdg3);
+    margin: 0 auto;
+}
+
+/* TIMELINE */
+.history {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--time-ft);
+    padding: 6.25rem 2rem;
+}
+.timeline {
+    width: 100%;
+    height: auto;
+    max-width: 50em;
+    margin: 0 auto;
+    position: relative;
+}
+.timeline ul{
+    list-style: none;
+}
+.timeline ul li {
+    padding: 20px;
+    background-color: var(--time-bg);
+    border-radius: .625rem;
+    margin-bottom: 1.25rem;
+}
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+.timeline-content h1 {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-s-bold);
+    line-height: 1.875rem;
+    margin-bottom: .625rem;
+}
+.timeline-content p {
+    font-size: var(--fs-norm);
+    font-weight: var(--fw-lt);
+    line-height: 1.875rem;
+    margin-bottom: .625rem;;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.timeline-content .date {
+    font-size: var(--fs-norm);
+    font-weight: var(--fw-bold);
+    margin-bottom: .625rem;
+    letter-spacing: 2px;
+    color: var(--time-bg);
+}
+p a {
+    text-decoration: none;
+    color: var(--link);
+    font-weight: var(--fw-bold);
+}
+
+/* min 992px */
+@media  screen and (min-width: 62em) {
+    /* Create the line down the middle of the timeline */
+    .timeline::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background-color: var(--red-gd);
+        left: 50%;
+        transform: translateX(-50%);
+    
+    }
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;  
+        transform: translateX(-1.875rem);
+        border-radius: 1.25rem 0px 1.25rem 1.25rem;
+    }
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(1.875rem);
+        border-radius: 0px 1.25rem 1.25rem 1.25rem;
+    }
+    /* Create the circle */
+    .timeline ul li::after {
+        content: '';
+        position: absolute;
+        height: 1.25rem;
+        width: 1.25rem;
+        background-color: var(--red-gd);
+        border-radius: 50%;
+        top: 0;
+    }
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -1.875rem;
+        
+    }
+    .timeline ul li:nth-child(even)::after {
+        transform: translate(-50%, -50%);
+        left: -1.875rem;
+        
+    }
+    .timeline ul li:nth-child(odd):hover {
+        background-color: var(--hov-odd);
+        color: var(--time-fth);
+
+    }
+    .timeline ul li:nth-child(odd) a:hover{
+        color: var(--time-fth);
+    }
+    .timeline ul li:nth-child(even):hover {
+        background-color: var(--hov-even);
+        color: var(--time-fth);
+    }
+    .timeline ul li:nth-child(even) a:hover{
+        color: var(--link-hov);
+        
+    }
+    .timeline-content .date {
+        position: absolute;
+        top: -1.875rem;
+    }
+
+}
+
+/* ANIMATION */
+.reg-text {
+    background-image: var(--gradient);
+    background-size: 100% 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-animation: stripes 2s linear infinite;
+    animation: stripes 2s linear infinite;
+    z-index: -1;   
+} 
+
+@-webkit-keyframes stripes{
+    100% {
+        background-position: 0 -50px ;
+    }
+}
+
+@keyframes stripes {
+    100% {
+        background-position: 0 -50px;
+    }
+}
