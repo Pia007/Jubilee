@@ -3,7 +3,7 @@ Jubilee: A brief history of Juneteenth
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The project](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
