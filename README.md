@@ -50,7 +50,7 @@ This project will continue to be developed with as I learn to use more technolog
 ## Author
 
 - LinkedIn - [Add your name here](https://www.linkedin.com/in/pia-torain-dev)
-- Twitter - [@yourusername](https://www.twitter.com/FeenixRizn)
+- Twitter - [@FeenixRizn](https://www.twitter.com/FeenixRizn)
 
 ## Acknowledgments
 
