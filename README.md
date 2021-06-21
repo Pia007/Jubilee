@@ -3,7 +3,7 @@ Jubilee: A brief history of Juneteenth
 ## Table of contents
 
 - [Overview](#overview)
-  - [The project](#the-challenge)
+  - [The Project](#the-challenge)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -49,8 +49,13 @@ This project will continue to be developed with as I learn to use more technolog
 
 ## Author
 
+<<<<<<< HEAD
 - LinkedIn - [Pia Torain](https://www.linkedin.com/in/pia-torain-dev)
 - Twitter - [@yourusername](https://www.twitter.com/FeenixRizn)
+=======
+- LinkedIn - [Add your name here](https://www.linkedin.com/in/pia-torain-dev)
+- Twitter - [@FeenixRizn](https://www.twitter.com/FeenixRizn)
+>>>>>>> 787490a46ec6bb52b125481b208a34856ac39989
 
 ## Acknowledgments
 
