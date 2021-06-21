@@ -39,7 +39,7 @@ This is brief history of Juneteenth.  This is my very first Passion Project.  I 
 
 ### What I learned
 
-I learned more about the history of Juneteenth, using linear-gradients and creating timelines.
+I learned more about the history of Juneteenth, using linear-gradients, creating timelines, theme changes and hover affects.
 
 
 ### Continued development
