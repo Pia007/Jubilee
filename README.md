@@ -44,7 +44,7 @@ I learned more about the history of Juneteenth, using linear-gradients, creating
 
 ### Continued development
 
-This project will continue to be developed with as I learn to use more technologies.
+This project will continue to be developed as I learn to use more technologies.
 
 
 ## Author
