@@ -39,7 +39,7 @@ This is brief history of Juneteenth.  This is my very first Passion Project.  I 
 
 ### What I learned
 
-I learned more about the history of Juneteenth, using linear-gradients, creating timelines, theme changes and hover affects.
+I learned more about the history of Juneteenth, how to use linear-gradients, create timelines, theme changes and hover affects.
 
 
 ### Continued development
@@ -54,6 +54,7 @@ This project will continue to be developed as I learn to use more technologies.
 
 ## Acknowledgments
 
-I like to thank all of the people that have fought to make Juneteenth a national holiday. If we are ALL not free, then NONE of us are free!
+I'd like to thank all of the people that have fought to make Juneteenth a National Holiday. 
+A special thanks to [Tyrone Cartwright](https://www.linkedin.com/in/tyrone-cartwright-2370b444/) for providing invaluable feedback.
 
 

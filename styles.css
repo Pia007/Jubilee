@@ -46,6 +46,7 @@ body[theme="traditional"] {
     --hov-even: hsla(125, 69%, 20%, 1);
     --link: hsla(125, 69%, 25%, 1);
     --link-hov: hsla( 0, 0%, 0%, 1);
+    --clos: hsla(0, 100%, 35%, 1)
     
 
 }
@@ -67,6 +68,7 @@ body[theme="commemorative"] {
     --hov-odd2: hsla(240, 100%, 50%, 1);
     --hov-even: hsla(0, 100%, 35%, 1);
     --link: hsla( 0, 0%, 0%, 1);
+    --clos: hsla( 0, 0%, 0%, 1);
 }
 
 *  {
@@ -119,22 +121,7 @@ span {
     padding: 0;
     background-image: var(--btn-gd);
     border: none;
-    z-index: 2;
-    
-}
-
-
-.fas {
-    float: right;
-    vertical-align: middle;
-    font-size: 2rem;
-    color: var(--green-gd);
-    padding: .875rem;
-    text-align: right;
-    margin-right: auto;
-}
-.fas:hover {
-    color: var(--yellow);
+    z-index: 2;   
 }
 
 /* MAIN */
@@ -145,8 +132,8 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 15rem;
+    margin: -14rem auto;
+    /* margin-bottom: -; */
 }
 .headings {
     width: auto;
@@ -162,11 +149,18 @@ h1 {
 h2 {
     font-size: var(--fs-hdg2);
     margin: 0 auto;
+    color: var(--white);
 }
 h3 {
     font-size: var(--fs-hdg3);
     margin: 0 auto;
 }
+a .fas {
+    font-size: 2rem;
+    background-image: var(-gradient);
+    padding-top: 4rem;   
+}
+
 
 /* TIMELINE */
 .history {
@@ -177,7 +171,7 @@ h3 {
     align-items: center;
     justify-content: center;
     color: var(--time-ft);
-    padding: 6.25rem 2rem;
+    padding: 4rem 2rem;
 }
 .timeline {
     width: 100%;
@@ -210,18 +204,16 @@ h3 {
     line-height: 1.875rem;
     margin-bottom: .625rem;;
     text-align: justify;
-    text-justify: inter-word;
 }
 img {
     float: inherit;  
 }
-
 .timeline-content .date {
     font-size: var(--fs-norm);
     font-weight: var(--fw-bold);
     margin-bottom: .625rem;
     letter-spacing: 2px;
-    color: var(--time-bg);
+    color: var(--white);
 }
 p a {
     text-decoration: none;
@@ -229,9 +221,47 @@ p a {
     font-weight: var(--fw-bold);
 }
 
+.timeline ul li:nth-child(odd):hover {
+    background-color: var(--hov-odd);
+    color: var(--time-fth);
+
+}
+.timeline ul li:nth-child(odd) a:hover{
+    color: var(--time-fth);
+}
+.timeline ul li:nth-child(even):hover {
+    background-color: var(--hov-even);
+    color: var(--time-fth);
+}
+.timeline ul li:nth-child(even) a:hover{
+    color: var(--link-hov);
+    
+}
+.arrow-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+p.reg-text{
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--clos);
+    
+}
+
 /* min 992px */
 @media  screen and (min-width: 62em) {
     /* Create the line down the middle of the timeline */
+    .home {
+        margin: 0 auto;
+        margin-bottom: 10rem;
+    }
+    a .fas {
+        font-size: 4rem;
+        /* background-image: var(-gradient); */
+        padding-top: 6rem;   
+    }
     .timeline::before {
         content: '';
         position: absolute;
@@ -240,7 +270,6 @@ p a {
         background-color: var(--red-gd);
         left: 50%;
         transform: translateX(-50%);
-    
     }
     .timeline ul li {
         width: 50%;
@@ -279,27 +308,11 @@ p a {
         left: -1.875rem;
         
     }
-    .timeline ul li:nth-child(odd):hover {
-        background-color: var(--hov-odd);
-        color: var(--time-fth);
-
-    }
-    .timeline ul li:nth-child(odd) a:hover{
-        color: var(--time-fth);
-    }
-    .timeline ul li:nth-child(even):hover {
-        background-color: var(--hov-even);
-        color: var(--time-fth);
-    }
-    .timeline ul li:nth-child(even) a:hover{
-        color: var(--link-hov);
-        
-    }
     .timeline-content .date {
         position: absolute;
         top: -1.875rem;
+        color: var(--time-bg);
     }
-
 }
 
 /* ANIMATION */
@@ -314,12 +327,11 @@ p a {
     z-index: -1;   
 } 
 
-@-webkit-keyframes stripes{
+@-webkit-keyframes stripes {
     100% {
         background-position: 0 -50px ;
     }
 }
-
 @keyframes stripes {
     100% {
         background-position: 0 -50px;
