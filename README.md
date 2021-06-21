@@ -22,10 +22,10 @@ This is brief history of Juneteenth.  This is my very first Passion Project.  I 
 
 
 
-### Links
+### Contact Me
 
-- Project URL: [Add solution URL here](https://github.com/Pia007/Jubilee)
-- Live Site URL: [Add live site URL here](https:////pia007.github.io/Jubilee/)
+- Project URL: [https://github.com/Pia007/Jubilee]
+- Live Site URL: [https:////pia007.github.io/Jubilee/]
 
 ## My process
 
@@ -49,7 +49,7 @@ This project will continue to be developed with as I learn to use more technolog
 
 ## Author
 
-- LinkedIn - [Add your name here](https://www.linkedin.com/in/pia-torain-dev)
+- LinkedIn - [Pia Torain](https://www.linkedin.com/in/pia-torain-dev)
 - Twitter - [@yourusername](https://www.twitter.com/FeenixRizn)
 
 ## Acknowledgments
