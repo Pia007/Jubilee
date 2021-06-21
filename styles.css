@@ -132,8 +132,8 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: -8rem auto;
-    /* margin-bottom: -; */
+    margin: -10rem auto;
+    
 }
 .headings {
     width: auto;
