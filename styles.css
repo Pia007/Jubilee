@@ -36,10 +36,11 @@ body[theme="traditional"] {
     --hov-odd: hsla(0, 100%, 35%, 1);
     --hov-odd2: hsla(125, 45%, 35%, 1);
     --btn-gd: linear-gradient(to bottom, var(--red-gd)30%, var(--black-gd)35% 62%, var(--green-gd) 76%);
-    --gradient: linear-gradient(to right, var(--red-gd)25%, var(--black-gd)35% 62%, var(--green-gd) 76%);
+    --gradient: linear-gradient(to bottom right, var(--red-gd)25%, var(--black-gd)35% 62%, var(--green-gd) 76%);
     --time-ft: hsla(255, 100%, 100%, 1);
     --time-fth: hsla(255, 100%, 100%, 1);
     --time-bg: hsla( 0, 0%, 0%, 1);
+    --time-dt: hsla(255, 100%, 100%, 1);
     --nav-bg: hsla( 0, 0%, 0%, 1);
     --hov-odd: hsla(0, 100%, 35%, 1);
     --hov-odd2: hsla(125, 45%, 35%, 1);
@@ -59,10 +60,11 @@ body[theme="commemorative"] {
     --hov-odd2: hsla(240, 100%, 50%, 1);
     --btn-gd: linear-gradient(to bottom, var(--blue-gd)25%, var(--white)35% 62%, var(--red-gd) 76%);
     --btn-bg: hsla( 0, 0%, 0%, .7 );
-    --gradient: linear-gradient(to right, var(--blue-gd)25%, var(--white)35% 62%, var(--red-gd) 76%);
+    --gradient: linear-gradient(to top right, var(--blue-gd)25%, var(--white)35% 62%, var(--red-gd) 76%);
     --time-fth: hsla(255, 100%, 100%, 1);
     --time-ft: hsla( 0, 0%, 0%, 1);
     --time-bg: hsla(255, 100%, 100%, 1);
+    --time-dt: hsla( 0, 0%, 0%, 1);
     --nav-bg: hsla( 0, 0%, 0%, 1);
     --hov-odd: hsla(240, 100%, 50%, 1);
     --hov-odd2: hsla(240, 100%, 50%, 1);
@@ -84,7 +86,7 @@ body {
     font-weight: var(--fw-s-bold);
     transition: background-color 0.3s;    
 }
-
+/* NAVIGATION */
 .navbar {
     width: 100%;
     overflow: hidden;
@@ -109,7 +111,6 @@ body {
     color: var(-white);
     background-color: var(--hov-odd2);
 } 
-
 span {
     display: flex;
     justify-content: flex-end;
@@ -133,8 +134,7 @@ span {
     align-items: center;
     justify-content: center;
     margin: 2.5rem auto;
-    margin-bottom: 2rem;
-    
+    margin-bottom: 2rem;   
 }
 .headings {
     width: auto;
@@ -150,7 +150,6 @@ h1 {
 h2 {
     font-size: var(--fs-hdg2);
     margin: 0 auto;
-    color: var(--white);
 }
 h3 {
     font-size: var(--fs-hdg3);
@@ -161,7 +160,6 @@ a .fas {
     background-image: var(-gradient);
     padding-top: 4rem;   
 }
-
 
 /* TIMELINE */
 .history {
@@ -199,6 +197,13 @@ a .fas {
     line-height: 1.875rem;
     margin-bottom: .625rem;
 }
+.timeline-content h2 {
+    font-size: var(--fs-norm);
+    font-weight: var(--fw-bold);
+    margin-bottom: .625rem;
+    letter-spacing: 2px;
+    
+}
 .timeline-content p {
     font-size: var(--fs-norm);
     font-weight: var(--fw-lt);
@@ -209,23 +214,17 @@ a .fas {
 img {
     float: inherit;  
 }
-.timeline-content .date {
-    font-size: var(--fs-norm);
-    font-weight: var(--fw-bold);
-    margin-bottom: .625rem;
-    letter-spacing: 2px;
-    color: var(--white);
-}
 p a {
     text-decoration: none;
     color: var(--link);
     font-weight: var(--fw-bold);
 }
-
+.timeline-content:hover {
+    color: var(--white);
+}
 .timeline ul li:nth-child(odd):hover {
     background-color: var(--hov-odd);
     color: var(--time-fth);
-
 }
 .timeline ul li:nth-child(odd) a:hover{
     color: var(--time-fth);
@@ -235,8 +234,7 @@ p a {
     color: var(--time-fth);
 }
 .timeline ul li:nth-child(even) a:hover{
-    color: var(--link-hov);
-    
+    color: var(--link-hov);   
 }
 .arrow-up {
     display: flex;
@@ -247,8 +245,7 @@ p a {
 p.reg-text{
     text-align: center;
     padding-bottom: 2rem;
-    color: var(--clos);
-    
+    color: var(--clos);   
 }
 
 /* min 992px */
@@ -260,7 +257,6 @@ p.reg-text{
     }
     a .fas {
         font-size: 4rem;
-        /* background-image: var(-gradient); */
         padding-top: 6rem;   
     }
     .timeline::before {
@@ -307,13 +303,10 @@ p.reg-text{
     .timeline ul li:nth-child(even)::after {
         transform: translate(-50%, -50%);
         left: -1.875rem;
-        
     }
-    .timeline-content .date {
-        position: absolute;
-        top: -1.875rem;
-        color: var(--time-bg);
-    }
+    .timeline-content:hover {
+        color: var(--white);
+    }       
 }
 
 /* ANIMATION */
@@ -327,7 +320,6 @@ p.reg-text{
     animation: stripes 2s linear infinite;
     z-index: -1;   
 } 
-
 @-webkit-keyframes stripes {
     100% {
         background-position: 0 -50px ;
