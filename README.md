@@ -20,6 +20,11 @@ Jubilee
 
 This is brief history of Juneteenth.  This is my very first Passion Project.  I started this project because I wanted to have a better understanding of the history of Juneteenth.  The project is by no means exhaustive with dynamic details.  It is merely intent to act a a guide to begin research and an exercise in Frontend Development.  
 
+![Jubilee1](https://user-images.githubusercontent.com/66088725/124177208-c153a000-da64-11eb-8d2d-39d215e49603.JPG)
+
+
+![Jubilee2](https://user-images.githubusercontent.com/66088725/124177227-c6b0ea80-da64-11eb-9c3f-291b89743362.JPG)
+
 
 
 ### Contact Me
